@@ -3,11 +3,48 @@
   <PropertyGroup>
     <TargetFrameworks>netcoreapp2.2;netstandard2.0;net45;net46;net47;net48;net40</TargetFrameworks>
     <AssemblyName>DWPowerShell.Utility</AssemblyName>
+    <Authors>David Wise</Authors>
+    <Description>Utility Library to help when writing PowerShell Cmdlets</Description>
+    <AssemblyVersion>0.0.0.1</AssemblyVersion>
+    <FileVersion>1.0.0.1</FileVersion>
+    <Version>0.0.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Copyright>2019 David J. Wise</Copyright>
+    <PackageProjectUrl>https://github.com/DavidWise/DWPSUtil</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/DavidWise/DWPSUtil</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>powershell utility</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.PowerShell.5.ReferenceAssemblies" Version="1.1.0" />
+    <PackageReference Include="Microsoft.PowerShell.Native" Version="6.2.0" />
     <PackageReference Include="StaticAbstraction" Version="0.0.6" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net48'">
+    <PackageReference Include="Microsoft.PowerShell.5.1.ReferenceAssemblies">
+      <Version>1.0.0</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net47'">
+    <PackageReference Include="Microsoft.PowerShell.5.1.ReferenceAssemblies">
+      <Version>1.0.0</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="Microsoft.PowerShell.5.1.ReferenceAssemblies">
+      <Version>1.0.0</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.2'">
+    <PackageReference Include="Microsoft.PowerShell.5.1.ReferenceAssemblies">
+      <Version>1.0.0</Version>
+    </PackageReference>
   </ItemGroup>
 
 	<PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0'">
