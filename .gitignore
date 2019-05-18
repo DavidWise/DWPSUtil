@@ -1,0 +1,15 @@
+#Visual Studio
+# VS2017 and VSCode config files.
+.vs
+obj
+bin
+*.user
+*.suo
+.suo
+packages
+/packages/*
+!packages/repositories.config
+/Backup/*
+UpgradeLog.htm
+package-lock.json
+/TestResults/
