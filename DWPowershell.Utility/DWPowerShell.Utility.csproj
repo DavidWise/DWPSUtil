@@ -5,9 +5,9 @@
     <AssemblyName>DWPowerShell.Utility</AssemblyName>
     <Authors>David Wise</Authors>
     <Description>Utility Library to help when writing PowerShell Cmdlets</Description>
-    <AssemblyVersion>0.0.2.0</AssemblyVersion>
-    <FileVersion>1.0.2.0</FileVersion>
-    <Version>0.0.2</Version>
+    <AssemblyVersion>0.0.3.0</AssemblyVersion>
+    <FileVersion>1.0.3.0</FileVersion>
+    <Version>0.0.3</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Copyright>2019 David J. Wise</Copyright>
     <PackageProjectUrl>https://github.com/DavidWise/DWPSUtil</PackageProjectUrl>
@@ -20,7 +20,7 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.PowerShell.5.ReferenceAssemblies" Version="1.1.0" />
     <PackageReference Include="Microsoft.PowerShell.Native" Version="6.2.0" />
-    <PackageReference Include="StaticAbstraction" Version="0.0.6" />
+    <PackageReference Include="StaticAbstraction" Version="0.0.7" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net48'">

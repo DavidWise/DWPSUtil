@@ -26,7 +26,7 @@ namespace DWPowerShell.Utility.Abstraction.Windows
 
         public WindowsAPI(IStaticAbstraction diskManager)
         {
-            _diskManager = diskManager ?? new StaticAbstractionWrapper();
+            _diskManager = diskManager ?? new StAbWrapper();
         }
 
         public string BuildRelativePath(string sourcePath, string targetPath)

@@ -19,7 +19,7 @@ namespace DWPowerShell.Utility
 
         static DWPSUtils()
         {
-            _diskManager = new StaticAbstractionWrapper();
+            _diskManager = new StAbWrapper();
             _processManager = new ProcessManager();
         }
 

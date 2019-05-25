@@ -9,7 +9,7 @@ namespace DWPowerShell.Utility.Cache
     public class CacheContainer : ICacheContainer
     {
         protected Dictionary<string, ICacheItem> _entries = null;
-        protected IStaticAbstraction _diskManager = new StaticAbstractionWrapper();
+        protected IStaticAbstraction _diskManager = new StAbWrapper();
 
         public CacheContainer()
         {

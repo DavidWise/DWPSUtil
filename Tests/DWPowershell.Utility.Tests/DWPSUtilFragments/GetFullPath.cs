@@ -36,7 +36,7 @@ namespace DWPowerShell.Utility.Tests.PSUtilFragments
         [TestCase("H:\\some\\folder", " \t ", "H:\\some\\folder")]
         public void GetFullPath_whitespace_path_matches_basePath(string basePath, string fileName, string expectedValue)
         {
-            var combined = string.IsNullOrWhiteSpace(fileName) ? basePath : new StaticAbstractionWrapper().Path.Combine(basePath, fileName);
+            var combined = string.IsNullOrWhiteSpace(fileName) ? basePath : new StAbWrapper().Path.Combine(basePath, fileName);
             _diskManager.Path.Combine(basePath, fileName).Returns(combined);
             var info = new MockFileInfo { FullName = combined };
             _diskManager.NewFileInfo(combined).Returns(info);
@@ -50,7 +50,7 @@ namespace DWPowerShell.Utility.Tests.PSUtilFragments
         [TestCase("H:\\some\\folder", "Some\\Name", "H:\\some\\folder\\Some\\Name")]
         public void GetFullPath_valid_path(string basePath, string fileName, string expectedValue)
         {
-            var combined = new StaticAbstractionWrapper().Path.Combine(basePath, fileName);
+            var combined = new StAbWrapper().Path.Combine(basePath, fileName);
             _diskManager.Path.Combine(basePath, fileName).Returns(combined);
 
             var info = new MockFileInfo { FullName = combined };

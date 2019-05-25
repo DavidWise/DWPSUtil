@@ -10,7 +10,7 @@ namespace DWPowerShell.Utility.Cache.Dependency
         public bool Exists { get; protected set; }
         public DateTime LastModified { get; protected set; }
 
-        public CacheDependencyFile(string fullPath) : this(new StaticAbstractionWrapper(), fullPath)
+        public CacheDependencyFile(string fullPath) : this(new StAbWrapper(), fullPath)
         {
         }
 

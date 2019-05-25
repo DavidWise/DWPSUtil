@@ -14,7 +14,7 @@ namespace DWPowerShell.Utility.Cache.Dependency
 
         public CacheDependencyCollection(IStaticAbstraction diskManager)
         {
-            _diskManager = diskManager ?? new StaticAbstractionWrapper();
+            _diskManager = diskManager ?? new StAbWrapper();
         }
 
         public void AddDependencyFiles(string[] filePaths)
