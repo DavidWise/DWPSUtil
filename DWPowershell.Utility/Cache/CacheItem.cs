@@ -1,5 +1,5 @@
-﻿using System;
-using DWPowerShell.Utility.Cache.Dependency;
+﻿using DWPowerShell.Utility.Cache.Dependency;
+using System;
 
 namespace DWPowerShell.Utility.Cache
 {

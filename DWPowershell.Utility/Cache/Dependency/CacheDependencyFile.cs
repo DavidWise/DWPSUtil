@@ -1,5 +1,5 @@
-﻿using System;
-using StaticAbstraction;
+﻿using StaticAbstraction;
+using System;
 
 namespace DWPowerShell.Utility.Cache.Dependency
 {

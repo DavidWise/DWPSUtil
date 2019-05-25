@@ -1,8 +1,8 @@
-﻿using System;
+﻿using StaticAbstraction;
+using System;
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
-using StaticAbstraction;
 
 namespace DWPowerShell.Utility.Abstraction.Windows
 {

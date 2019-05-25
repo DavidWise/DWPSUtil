@@ -1,12 +1,12 @@
-﻿using System;
-using System.Reflection;
-using System.Diagnostics.CodeAnalysis;
-using System.IO;
-using System.Linq;
-using DWPowerShell.Utility.Abstraction.Process;
+﻿using DWPowerShell.Utility.Abstraction.Process;
 using DWPowerShell.Utility.Abstraction.Windows;
 using StaticAbstraction;
 using StaticAbstraction.Reflection;
+using System;
+using System.Diagnostics.CodeAnalysis;
+using System.IO;
+using System.Linq;
+using System.Reflection;
 
 namespace DWPowerShell.Utility
 {
@@ -276,20 +276,6 @@ namespace DWPowerShell.Utility
         {
             var winApi = new WindowsAPI(_diskManager);
             return winApi.BuildRelativePath(sourcePath, targetPath);
-        }
-    }
-
-
-    public static class PSUtilExtensions
-    {
-        public static string[] TrimAll(this string[] values)
-        {
-            if (values == null || values.Length<1) return values;
-
-            var result = new string[values.Length];
-            for (int pos = 0; pos < values.Length; pos++)
-                result[pos] = values[pos]?.Trim();
-            return result;
         }
     }
 }

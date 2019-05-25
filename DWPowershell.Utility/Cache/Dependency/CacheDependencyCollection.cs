@@ -1,6 +1,6 @@
-﻿using System.Collections.Generic;
+﻿using StaticAbstraction;
+using System.Collections.Generic;
 using System.Linq;
-using StaticAbstraction;
 
 namespace DWPowerShell.Utility.Cache.Dependency
 {

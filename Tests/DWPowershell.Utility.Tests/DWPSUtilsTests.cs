@@ -1,10 +1,10 @@
-﻿using System;
+﻿using NSubstitute;
 using NUnit.Framework;
-using NSubstitute;
 using StaticAbstraction;
 using StaticAbstraction.IO;
 using StaticAbstraction.IO.Mocks;
 using StaticAbstraction.Reflection;
+using System;
 
 namespace DWPowerShell.Utility.Tests
 {

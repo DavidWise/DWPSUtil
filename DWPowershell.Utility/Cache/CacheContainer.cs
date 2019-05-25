@@ -1,8 +1,8 @@
-﻿using System;
+﻿using DWPowerShell.Utility.Cache.Dependency;
+using StaticAbstraction;
+using System;
 using System.Collections.Generic;
 using System.Linq;
-using DWPowerShell.Utility.Cache.Dependency;
-using StaticAbstraction;
 
 namespace DWPowerShell.Utility.Cache
 {

@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Diagnostics.CodeAnalysis;
 using System.Management.Automation;
 
 namespace DWPowerShell.Utility.Cmdlet
 {
 
-    [ExcludeFromCodeCoverage]
-    public class DWPSCmdletBase :PSCmdlet, IDWPSCmdlet
+    public abstract class DWPSCmdletBase :PSCmdlet, IDWPSCmdlet
     {
         private string _scriptPath;
 
