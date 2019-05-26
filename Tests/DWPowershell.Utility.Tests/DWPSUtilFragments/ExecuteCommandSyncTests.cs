@@ -97,7 +97,6 @@ namespace DWPowerShell.Utility.Tests.PSUtilFragments
         [Test]
         public void Valid_Change_app_dir_Tests()
         {
-            var expectedCommand = "SomeAppName";
             var currentFolder = "C:\\current\\folder\\here";
             var appFolder = "C:\\app\\folder\\there";
 

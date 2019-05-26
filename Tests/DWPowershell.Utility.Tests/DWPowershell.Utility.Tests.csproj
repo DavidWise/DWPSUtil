@@ -1,25 +1,41 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.2</TargetFramework>
-
+    <TargetFrameworks>netcoreapp2.2;netstandard2.0;net45;net462;net47;net48</TargetFrameworks>
     <IsPackable>false</IsPackable>
-
     <AssemblyName>DWPowerShell.Utility.Tests</AssemblyName>
-
     <RootNamespace>DWPowerShell.Utility.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NSubstitute" Version="4.1.0" />
-    <PackageReference Include="nunit" Version="3.11.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.11.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
-    <PackageReference Include="StaticAbstraction" Version="0.0.7" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\DWPowershell.Utility\DWPowerShell.Utility.csproj" />
   </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="NSubstitute" Version="4.1.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.9.0" />
+    <PackageReference Include="StaticAbstraction" Version="0.0.7" />
+    <PackageReference Include="nunit" Version="3.11.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.11.0" />
+  </ItemGroup>
 
+
+	<PropertyGroup Condition=" '$(TargetFramework)' == 'net45'">
+		<DefineConstants>NET45;NETFULL</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(TargetFramework)' == 'net462'">
+		<DefineConstants>NET46;NET462;NETFULL</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(TargetFramework)' == 'net47'">
+		<DefineConstants>NET47;NETFULL</DefineConstants>
+	</PropertyGroup>	
+	<PropertyGroup Condition=" '$(TargetFramework)' == 'net48'">
+		<DefineConstants>NET48;NETFULL;NETSTANDARD;NETSTANDARD2_0</DefineConstants>
+	</PropertyGroup>	
+	<PropertyGroup Condition=" '$(TargetFramework)' == 'netstandard2.0'">
+		<DefineConstants>NETCORE;NETSTANDARD;NETSTANDARD2_0</DefineConstants>
+	</PropertyGroup>
+	<PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.2'">
+		<DefineConstants>NETCORE22;NETCORE</DefineConstants>
+	</PropertyGroup>
 </Project>

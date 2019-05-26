@@ -1,4 +1,4 @@
-dotnet nuget push -s http://localhost:5000/v3/index.json -k BAGET-SERVER-API-KEY DWPowerShell.Utility\bin\Debug\DWPowerShell.Utility.0.0.1.nupkg
+dotnet nuget push -s http://localhost:5000/v3/index.json -k BAGET-SERVER-API-KEY DWPowerShell.Utility\bin\Debug\DWPowerShell.Utility.0.0.4.nupkg
 
 
 dotnet nuget delete  -s http://localhost:5000/v3/index.json -k BAGET-SERVER-API-KEY DWPowerShell.Utility 0.0.1

@@ -84,9 +84,10 @@ namespace DWPowerShell.Utility.Tests
         [TestCase("Single Value", "ngle Val", "SsIiUuEe")]
         public void TrimAll_Chars_Tests(string values, string expected, string chars)
         {
-            var splitDelim = ",";
             char[] splitChars = null;
             if (chars != null) splitChars = chars.ToCharArray();
+
+            var splitDelim = new char[] { ',' };
             var source = values?.Split(splitDelim, StringSplitOptions.None);
             var expectedValues = expected?.Split(splitDelim, StringSplitOptions.None);
 
