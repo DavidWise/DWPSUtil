@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.572
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DWPowerShell.Utility", "DWPowerShell.Utility\DWPowerShell.Utility.csproj", "{23103E0F-5F50-4A7B-A740-35BC0F472D44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DWPowerShell.Utility", "DWPowerShell.Utility\DWPowerShell.Utility.csproj", "{23103E0F-5F50-4A7B-A740-35BC0F472D44}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Root", "Root", "{48181955-55B0-4075-A748-61B881174718}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		LICENSE = LICENSE
+		Readme.md = Readme.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C0AC3292-DAF4-4E4B-9977-B6BBD530B8C0}"
