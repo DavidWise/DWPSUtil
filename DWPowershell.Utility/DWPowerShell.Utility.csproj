@@ -18,7 +18,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="StaticAbstraction" Version="0.0.7" />
+    <PackageReference Include="StaticAbstraction" Version="0.1.0" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
