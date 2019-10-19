@@ -14,6 +14,7 @@ on each string in the array and returns a copy of the array with all values trim
 
 ## Supported versions of .Net
 
+- .Net Core 3.0
 - .Net Core 2.2
 - .Net Standard 2.0
 - .Net Framework 4.8
