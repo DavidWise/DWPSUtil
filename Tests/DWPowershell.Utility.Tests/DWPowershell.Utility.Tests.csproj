@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.0;netcoreapp2.2;netstandard2.0;net45;net462;net47;net48</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1;netcoreapp3.0;netcoreapp2.2;net45;net462;net47;net48</TargetFrameworks>
     <IsPackable>false</IsPackable>
     <AssemblyName>DWPowerShell.Utility.Tests</AssemblyName>
     <RootNamespace>DWPowerShell.Utility.Tests</RootNamespace>
@@ -14,9 +14,12 @@
   <ItemGroup>
     <PackageReference Include="NSubstitute" Version="4.2.1" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.3.0" />
-    <PackageReference Include="StaticAbstraction" Version="0.9.0.8" />
+    <PackageReference Include="StaticAbstraction" Version="1.3.1" />
     <PackageReference Include="nunit" Version="3.12.0" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
   </ItemGroup>
 
 
@@ -38,7 +41,11 @@
 	<PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.2'">
 		<DefineConstants>NETCORE22;NETCORE</DefineConstants>
 	</PropertyGroup>
+
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.0'">
     <DefineConstants>NETCORE30;NETSTANDARD2_1;NETCORE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.1'">
+    <DefineConstants>NETCORE31;NETSTANDARD2_1;NETCORE</DefineConstants>
   </PropertyGroup>
 </Project>
